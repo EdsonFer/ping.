@@ -150,38 +150,44 @@
   background-color: #eeeeee;
 }
 
-/* line 140, ../../Desktop/ping/sass/style.scss */
+/* line 138, ../../Desktop/ping/sass/style.scss */
+.container__social-icons > a > ion-icon:hover {
+  color: white;
+  background-color: #4f7df3;
+}
+
+/* line 145, ../../Desktop/ping/sass/style.scss */
 .container__footer {
   margin: 3em 0 5em 0;
 }
 
 @media only screen and (max-width: 800px) {
-  /* line 146, ../../Desktop/ping/sass/style.scss */
+  /* line 151, ../../Desktop/ping/sass/style.scss */
   .container__title {
     font-size: 2em;
   }
-  /* line 150, ../../Desktop/ping/sass/style.scss */
+  /* line 155, ../../Desktop/ping/sass/style.scss */
   .container__subscribe {
     font-size: 1em;
   }
-  /* line 154, ../../Desktop/ping/sass/style.scss */
+  /* line 159, ../../Desktop/ping/sass/style.scss */
   .container__form__content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "container__input" "container__error-text" "container__notify";
   }
-  /* line 163, ../../Desktop/ping/sass/style.scss */
+  /* line 168, ../../Desktop/ping/sass/style.scss */
   .container__input {
     width: 100%;
     padding: 25px 10px;
     margin-bottom: 20px;
   }
-  /* line 170, ../../Desktop/ping/sass/style.scss */
+  /* line 175, ../../Desktop/ping/sass/style.scss */
   .container__notify > button {
     width: 100%;
     padding: 25px 7em;
   }
-  /* line 175, ../../Desktop/ping/sass/style.scss */
+  /* line 180, ../../Desktop/ping/sass/style.scss */
   .container__error-text {
     padding: 1em 0 1.5em 0;
   }
