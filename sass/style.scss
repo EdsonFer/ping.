@@ -1,0 +1,180 @@
+/* Primary colors */
+$blue: hsl(223, 87%, 63%);
+
+/*Secondary colors */
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+/* Neutral colors */
+$gray: hsl(0, 0%, 59%);
+$drk-blue: hsl(209, 33%, 12%);
+
+/* Default fonts */
+$libre-franklin: "Libre Franklin", sans-serif;
+
+:root {
+	font-size: 20px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $libre-franklin;
+}
+
+.container {
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+
+	&__logo {
+		margin-top: 7em;
+		> img {
+			width: 10em;
+		}
+	}
+
+	&__title {
+		font-size: 5em;
+		font-weight: 300;
+		color: $gray;
+
+		> span {
+			font-weight: 700px;
+			color: $drk-blue;
+		}
+	}
+
+	&__subscribe {
+		margin: 1em;
+		font-size: 2em;
+	}
+
+	&__form {
+		margin-top: 2.5em;
+		margin-bottom: 6em;
+	}
+
+	&__form__content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-items: center;
+		grid-template-areas:
+			"container__input container__notify"
+			"container__error-text container__error-text";
+	}
+
+	&__input {
+		outline: 0;
+		border: none;
+		width: 95%;
+		padding: 30px 10px;
+		border-radius: 50px;
+		box-shadow: 1px 5px 10px 1px $drk-blue;
+		font-size: 25px;
+		margin-right: 10px;
+		grid-area: container__input;
+
+		&::placeholder {
+			font-size: 20px;
+			text-align: center;
+		}
+		&:focus::placeholder {
+			color: transparent;
+		}
+
+		&--red-border {
+			border-color: $light-red;
+		}
+	}
+
+	&__error-text {
+		font-size: 1rem;
+		font-style: italic;
+		font-weight: 400;
+		color: $light-red;
+		padding: 1.5em 28em 0 0;
+		grid-area: container__error-text;
+
+		&--hide {
+			display: none;
+		}
+	}
+
+	&__notify {
+		text-decoration: none;
+		grid-area: container__notify;
+
+		> button {
+			color: white;
+			cursor: pointer;
+			width: 100%;
+			padding: 35px 100px;
+			border-radius: 50px;
+			border: none;
+			background-color: $blue;
+			font-size: 1.2em;
+			font-weight: 600;
+
+			&:hover {
+				background-color: $light-red;
+			}
+		}
+	}
+
+	&__social-icons {
+		margin-top: 4em;
+		text-decoration: none;
+
+		> a > ion-icon {
+			color: $blue;
+			padding: 1em;
+			width: 25px;
+			border: 2px solid white;
+			border-radius: 50%;
+			margin: 4px;
+			background-color: rgb(238, 238, 238);
+		}
+	}
+
+	&__footer {
+		margin: 3em 0 5em 0;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.container {
+		&__title {
+			font-size: 2em;
+		}
+
+		&__subscribe {
+			font-size: 1em;
+		}
+
+		&__form__content {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				"container__input"
+				"container__error-text"
+				"container__notify";
+		}
+
+		&__input {
+			width: 100%;
+			padding: 25px 10px;
+			margin-bottom: 20px;
+		}
+
+		&__notify {
+			> button {
+				width: 100%;
+				padding: 25px 7em;
+			}
+		}
+		&__error-text {
+			padding: 1em 0 1.5em 0;
+		}
+	}
+}

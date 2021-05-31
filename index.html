@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+		<title>Ping coming soon page</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="container__logo">
+				<img src="images/logo.svg" />
+			</header>
+
+			<section>
+				<h1 class="container__title">We are launching <span>soon!</span></h1>
+
+				<p class="container__subscribe">Subscribe and get notified</p>
+
+				<form action="#" class="container__form">
+					<div class="container__form__content">
+						<input
+							type="text"
+							id="email"
+							class="container__input"
+							placeholder="Your Email Address..."
+						/>
+						<p class="container__error-text container__error-text--hide">
+							Please provide a valid email address
+						</p>
+						<a class="container__notify"><button type="submit">Notify Me</button></a>
+					</div>
+				</form>
+			</section>
+
+			<section class="container__illustration">
+				<img src="images/illustration-dashboard.png" width="100%" />
+			</section>
+
+			<div class="container__social-icons">
+				<a href="#">
+					<ion-icon size="large" name="logo-facebook"></ion-icon>
+				</a>
+				<a href="#">
+					<ion-icon size="large" name="logo-twitter"></ion-icon>
+				</a>
+				<a href="#">
+					<ion-icon size="large" name="logo-instagram"></ion-icon>
+				</a>
+			</div>
+
+			<footer class="container__footer">Copyright Ping. All rights reserved.</footer>
+		</div>
+
+		<script src="error.js"></script>
+	</body>
+</html>

@@ -1,0 +1,190 @@
+/* Primary colors */
+/*Secondary colors */
+/* Neutral colors */
+/* Default fonts */
+/* line 15, ../../Desktop/ping/sass/style.scss */
+:root {
+  font-size: 20px;
+}
+
+/* line 18, ../../Desktop/ping/sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* line 25, ../../Desktop/ping/sass/style.scss */
+.container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* line 31, ../../Desktop/ping/sass/style.scss */
+.container__logo {
+  margin-top: 7em;
+}
+
+/* line 33, ../../Desktop/ping/sass/style.scss */
+.container__logo > img {
+  width: 10em;
+}
+
+/* line 38, ../../Desktop/ping/sass/style.scss */
+.container__title {
+  font-size: 5em;
+  font-weight: 300;
+  color: #969696;
+}
+
+/* line 43, ../../Desktop/ping/sass/style.scss */
+.container__title > span {
+  font-weight: 700px;
+  color: #151f29;
+}
+
+/* line 49, ../../Desktop/ping/sass/style.scss */
+.container__subscribe {
+  margin: 1em;
+  font-size: 2em;
+}
+
+/* line 54, ../../Desktop/ping/sass/style.scss */
+.container__form {
+  margin-top: 2.5em;
+  margin-bottom: 6em;
+}
+
+/* line 59, ../../Desktop/ping/sass/style.scss */
+.container__form__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  grid-template-areas: "container__input container__notify" "container__error-text container__error-text";
+}
+
+/* line 68, ../../Desktop/ping/sass/style.scss */
+.container__input {
+  outline: 0;
+  border: none;
+  width: 95%;
+  padding: 30px 10px;
+  border-radius: 50px;
+  box-shadow: 1px 5px 10px 1px #151f29;
+  font-size: 25px;
+  margin-right: 10px;
+  grid-area: container__input;
+}
+
+/* line 79, ../../Desktop/ping/sass/style.scss */
+.container__input::placeholder {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 83, ../../Desktop/ping/sass/style.scss */
+.container__input:focus::placeholder {
+  color: transparent;
+}
+
+/* line 87, ../../Desktop/ping/sass/style.scss */
+.container__input--red-border {
+  border-color: #ff5263;
+}
+
+/* line 92, ../../Desktop/ping/sass/style.scss */
+.container__error-text {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #ff5263;
+  padding: 1.5em 28em 0 0;
+  grid-area: container__error-text;
+}
+
+/* line 100, ../../Desktop/ping/sass/style.scss */
+.container__error-text--hide {
+  display: none;
+}
+
+/* line 105, ../../Desktop/ping/sass/style.scss */
+.container__notify {
+  text-decoration: none;
+  grid-area: container__notify;
+}
+
+/* line 109, ../../Desktop/ping/sass/style.scss */
+.container__notify > button {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 35px 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: #4f7df3;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* line 120, ../../Desktop/ping/sass/style.scss */
+.container__notify > button:hover {
+  background-color: #ff5263;
+}
+
+/* line 126, ../../Desktop/ping/sass/style.scss */
+.container__social-icons {
+  margin-top: 4em;
+}
+
+/* line 129, ../../Desktop/ping/sass/style.scss */
+.container__social-icons > a > ion-icon {
+  color: #4f7df3;
+  padding: 1em;
+  width: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 4px;
+  background-color: #eeeeee;
+}
+
+/* line 140, ../../Desktop/ping/sass/style.scss */
+.container__footer {
+  margin: 3em 0 5em 0;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 146, ../../Desktop/ping/sass/style.scss */
+  .container__title {
+    font-size: 2em;
+  }
+  /* line 150, ../../Desktop/ping/sass/style.scss */
+  .container__subscribe {
+    font-size: 1em;
+  }
+  /* line 154, ../../Desktop/ping/sass/style.scss */
+  .container__form__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "container__input" "container__error-text" "container__notify";
+  }
+  /* line 163, ../../Desktop/ping/sass/style.scss */
+  .container__input {
+    width: 100%;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+  }
+  /* line 170, ../../Desktop/ping/sass/style.scss */
+  .container__notify > button {
+    width: 100%;
+    padding: 25px 7em;
+  }
+  /* line 175, ../../Desktop/ping/sass/style.scss */
+  .container__error-text {
+    padding: 1em 0 1.5em 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
